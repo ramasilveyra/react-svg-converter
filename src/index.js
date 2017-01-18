@@ -68,7 +68,14 @@ function addStyleJSXAttribute(svg, component) {
     }
   };
 
-  delete styledSVG.content[0].content[1].attrs.fill
+  if (
+    styledSVG.content[0].content &&
+    styledSVG.content[0].content[1] &&
+    styledSVG.content[0].content[1].attrs &&
+    styledSVG.content[0].content[1].attrs.fill
+  ) {
+    delete styledSVG.content[0].content[1].attrs.fill
+  }
 
   return styledSVG;
 }
