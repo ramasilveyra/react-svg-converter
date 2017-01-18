@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/templates/react.function.js"],"names":["name","svg"],"mappings":";;;;;;kBAAe,UAACA,IAAD,EAAOC,GAAP;AAAA,oBACND,IADM,6BAEXC,GAFW,4BAIED,IAJF;AAAA,C","file":"react.function.js","sourcesContent":["export default (name, svg) =>\n`const ${name}Icon = (props) =>\n  ${svg};\n\nexport default ${name}Icon;`;\n"]}
